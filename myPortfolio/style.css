@@ -1,11 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(./Universe.jpg);
+  background-image: url(./texture.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  TODO: FIX IMAGE
   
 }
 
@@ -56,12 +56,15 @@ nav {
 }
 
 #profile-pic {
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
+  max-width: 300px; 
+  max-height: 300px;
   border-radius: 50%;
   margin: 15% auto;
   grid-column: 2/3;
   border-radius: 50%;
+  justify-content: center;
 }
 
 h1 {
@@ -93,12 +96,3 @@ button {
   letter-spacing: 16px;
   font-style: italic;
 }
-a:hover {
-  font-size: 22px;
-}
-
-.logo:hover {
-  width: 110px;
-  height: 110px;
-  margin: 3% 10%;
-} 
