@@ -9,30 +9,47 @@ body {
 
 #interests {
     border: 1px solid;
+    float: right;
+    width: 50%;
 }
 
 #software {
     border: 1px solid;
+    float: left;
+    width: 50%;
 }
 #certifications {
     border: 1px solid;
+    float: right;
+    width: 50%;
 }
 #languages {
     border: 1px solid;
+    float: left;
+    width: 50%
 }
 #education {
-    border: 1px solid;
     margin-bottom: 10px;
+    float: right;
+    width: 50%;
 }
 #skills {
     border: 1px solid;
     margin-bottom: 10px;
+    float: left;
+    width: 50%;
 }
 #experience {
-    border: 1px solid;
-    margin-bottom: 10px;
+ border: 1px solid;
+ float: right;
+ width: 50%;
 }
 #personalinfo {
     border: 1px solid;
     margin-bottom: 10px;
+    float: left;
+    width: 50%;
+}
+.borderbottom {
+    border-bottom: 1px solid;
 }
