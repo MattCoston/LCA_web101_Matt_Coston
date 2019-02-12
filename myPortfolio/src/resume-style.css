@@ -1,0 +1,38 @@
+
+body {
+    font-family: Calibri, Arial, sans-serif
+}
+
+#intent {
+    color: red;
+}
+
+#interests {
+    border: 1px solid;
+}
+
+#software {
+    border: 1px solid;
+}
+#certifications {
+    border: 1px solid;
+}
+#languages {
+    border: 1px solid;
+}
+#education {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+#skills {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+#experience {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+#personalinfo {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
