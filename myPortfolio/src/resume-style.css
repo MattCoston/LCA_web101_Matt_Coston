@@ -1,11 +1,14 @@
 * {
 
 }
+h1 {
+    font-size: 250%
+}
 .header {
     text-align: center;
 }
 body {
-    font-family: Calibri, Arial, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .address {
@@ -18,16 +21,31 @@ body {
     padding-bottom: 50px;
 }
 .container {
-    color: rgb(8, 32, 10);
+    color: rgb(199, 224, 196);
     padding: 10px;
     margin: 10px;
-    background-color: rgba(165, 158, 158, 0.87);
-    opacity: 0.35;
+    background-color: rgba(155, 146, 146, 0.87);
+    opacity: 1;
     }
 .textarea {
     padding-left: 50px;
     padding-right: 50px;
 }
-.summary {
-    
+.pad {
+    padding-bottom: 10px;
+}
+.left {
+    display: block;
+    display: inline-block;
+    text-align:  left;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.right {
+    display: inline-block;
+    text-align: right;
+    width: 90%;
+}
+.job {
+    border-bottom: dotted 1px;
 }
