@@ -1,0 +1,6 @@
+* {
+    text-decoration: none;
+    display: grid;
+    grid-column: 2 2;
+    background-color: aqua
+}
