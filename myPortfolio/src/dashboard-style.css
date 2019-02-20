@@ -33,20 +33,48 @@ header {
       "footer";
   }
   .calc {
-      width: 200px;
-      height: 100px;
+      width: 300px;
+      height: 200px;
+      padding: 5px;
+      margin: 10px;
       background-color: lightgray;
-  
-
+      display: grid;
+      grid-template-columns: 1fr;
   }
   .calc-button {
       
       display: grid;
-      grid-template-columns: repeat(4,1fr);
-      padding: 2%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
   }
   .calcdisplay {
-      width: 190px;
+      display: grid;
+      grid-template-columns: 1fr;
+    
+      width: 290px;
       height: 30px;
       border: solid 2px;
   }
+.todo-box {
+  margin: 10px;
+
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.todo {
+  border: 3px solid;
+  height: 300px;
+  width: 300px;
+  display: inline-grid;
+  grid-template-columns: 100%;
+  grid-row: auto auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+.textbox {
+  width: 100px;
+  height: 1000px;
+}
