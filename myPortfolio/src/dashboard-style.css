@@ -22,6 +22,9 @@ header {
   footer {
     grid-area: footer;
   }
+  #calendar {
+    text-align: center;
+  }
   .container {
     display: grid; /* Using the grid */
     grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
@@ -77,6 +80,24 @@ header {
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
+  
+}
+
+ .grid-container { 
+   height: 100%; 
+   margin: 10%;
+}
+
+.grid-container * { 
+ border: 3px solid lightgreen;
+ position: right;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   
 }
 
