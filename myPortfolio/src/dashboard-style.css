@@ -24,6 +24,8 @@ header {
   }
   #calendar {
     text-align: center;
+    color: green;
+    border-bottom: solid 5px;
   }
   .container {
     display: grid; /* Using the grid */
@@ -67,8 +69,7 @@ header {
 
 .checkbox {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  padding: 10px;
   
 }
 .todo {
@@ -77,8 +78,8 @@ header {
   height: 300px;
   width: 300px;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
+  
+  grid-template-columns: 10% auto;
   grid-gap: 5px;
   
 }
