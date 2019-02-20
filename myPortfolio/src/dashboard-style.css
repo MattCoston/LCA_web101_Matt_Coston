@@ -1,0 +1,52 @@
+* {
+    text-decoration: none;
+}
+body {
+    display: grid;
+}
+header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  nav {
+    grid-area: nav;
+  }
+  aside {
+    grid-area: aside;
+  }
+  .banner {
+    grid-area: banner;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .container {
+    display: grid; /* Using the grid */
+    grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "banner"
+      "footer";
+  }
+  .calc {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+  
+
+  }
+  .calc-button {
+      
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding: 2%;
+  }
+  .calcdisplay {
+      width: 190px;
+      height: 30px;
+      border: solid 2px;
+  }
