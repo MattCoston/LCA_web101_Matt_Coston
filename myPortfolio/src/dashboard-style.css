@@ -1,35 +1,32 @@
-* {
-    text-decoration: none;
-}
-body {
-    display: grid;
-}
 header {
+    background-color: lightblue;
     grid-area: header;
   }
   main {
+    background-color: pink;
+    min-height: calc(100vh - 54px);
     grid-area: main;
   }
   nav {
+    background-color: lightsalmon;
     grid-area: nav;
   }
   aside {
+    background-color: lightgreen;
     grid-area: aside;
   }
   .banner {
+    background-color: lavender;
     grid-area: banner;
   }
   footer {
+    background-color: khaki;
     grid-area: footer;
   }
-  #calendar {
-    text-align: center;
-    color: green;
-    border-bottom: solid 5px;
-  }
+  
   .container {
-    display: grid; /* Using the grid */
-    grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
+    display: grid;
+    grid-template-areas: 
       "header"
       "nav"
       "main"
@@ -37,99 +34,93 @@ header {
       "banner"
       "footer";
   }
-  .calc {
-      width: 300px;
-      height: 200px;
-      padding: 5px;
-      margin: 10px;
-      background-color: grey;
-      display: grid;
-      grid-template-columns: 1fr;
+  
+  @media (min-width: 500px) {
+    .container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: 
+        "header  header"
+        "nav     nav"
+        "aside   main"
+        "banner  footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
   }
+  
+  @media (min-width: 700px) {
+    .container {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+        "header header  header"
+        "nav    main    aside"
+        "nav    main    banner"
+        "footer footer  footer"
+     }
+     nav ul {
+       flex-direction: column;
+     }
+  }
+  .todo {
+    border: 5px solid;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    
+    grid-template-columns: 10% auto;
+    grid-gap: 5px;
+    
+  }
+  .calc {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr;
+}
   .calc-button {
       
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      
-  }
-  .calcdisplay {
-      display: grid;
-      grid-template-columns: 1fr;
-    
-      width: 290px;
-      height: 40px;
-      border-bottom: solid lightgray 2px;
-      box-shadow: -2px  -2px  rgb(180, 180, 180);
-      
-  }
-.calcdisplay-flex {
-    display: flex;
-    flex-basis: 10;
-    flex-flow: row;
-    flex: 90%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+}
+.calcdisplay {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    width: 290px;
+    height: 40px;
+    border-bottom: solid lightgray 2px;
+    box-shadow: -2px  -2px  rgb(180, 180, 180);
     
 }
-  .calc-flex {
-    width: 200px;
-    height: 200PX;
-    background-color: green;
-    display: flex;
-    flex-flow: column;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    
+
     
 
+  .calc-flex {
+      
+    width: 200px;
+    height: 100PX;
+    background-color: green;
+    border: 1px solid;
+  
+}
+.calc-flex-display {
+    display: flex;
+    flex: 110%;
+    justify-content: center;
+}
+  #output{
+    
+    
   }
   .calc-button-flex {
     display: flex;
     flex-wrap: wrap;
     flex:  25%;
     justify-content: center;
-    
-
-    
-    
   }
-.todo-box {
-  margin: 10px;
-
-}
-
-.checkbox {
-  display: grid;
-  padding: 10px;
-  
-}
-.todo {
-  border: 5px solid;
-  padding: 10px;
-  height: 300px;
-  width: 300px;
-  display: grid;
-  
-  grid-template-columns: 10% auto;
-  grid-gap: 5px;
-  
-}
-
- .grid-container { 
-   height: 100%; 
-   margin: 10%;
-}
-
-.grid-container * { 
- border: 3px solid lightgreen;
- position: right;
-}
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  
-}
-
