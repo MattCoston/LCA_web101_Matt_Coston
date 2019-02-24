@@ -1,26 +1,26 @@
 header {
-    background-color: lightblue;
+    background-color: aqua;
     grid-area: header;
   }
   main {
-    background-color: pink;
+    background-color: lightcyan;
     min-height: calc(100vh - 54px);
     grid-area: main;
   }
   nav {
-    background-color: lightsalmon;
+    background-color: maroon;
     grid-area: nav;
   }
   aside {
-    background-color: lightgreen;
+    background-color: aqua;
     grid-area: aside;
   }
   .banner {
-    background-color: lavender;
+    background-color: lightgreen;
     grid-area: banner;
   }
   footer {
-    background-color: khaki;
+    background-color: greenyellow;
     grid-area: footer;
   }
   
@@ -34,7 +34,10 @@ header {
       "banner"
       "footer";
   }
-  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
   @media (min-width: 500px) {
     .container {
       grid-template-columns: 1fr 3fr;
