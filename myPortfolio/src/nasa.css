@@ -29,11 +29,29 @@ main{
     justify-content: center;
 }
 
+#main-contact {
+    width: 30%;
+}
+
+#contact {
+    margin: 10px 0 10px 30px;
+    padding: 10px;
+}
+
+label {
+    margin: 20px;
+}
+
+input {
+   width: 150px;
+   padding: 10px;
+}
+
 article{
     width: 270px;
     height: 324px;
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
     justify-content: center;;
     align-content: center;
 }
@@ -47,3 +65,8 @@ article{
     height: 324px;
 }
 
+.messsage {
+    height: 30px;
+    width: 200px;
+    background-color: blue;
+}
