@@ -412,6 +412,9 @@ p a:hover {
 		
 		display: grid;
 		grid-auto-rows: 1%;
+		grid-area: auto;
+		justify-content: left;
+		padding-left: 25px;
 	
 	}
 }		
