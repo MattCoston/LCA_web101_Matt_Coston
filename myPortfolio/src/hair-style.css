@@ -297,12 +297,11 @@ p a:hover {
 	border: 2px solid #252525;
 	color: #252525;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: normal;
-	margin: 0 0 37px;
-	padding: 20px 10px;
+	margin: 0 0 40px;
+	padding: 25px 15px;
 	text-align: center;
-	text-transform: uppercase;
 	width: 596px;
 }
 #body form textarea {
@@ -314,7 +313,7 @@ p a:hover {
 	background: #252525;
 	color: #fff;
 	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: normal;
 	display: inline-block;
 	padding: 20px 28px;
@@ -393,14 +392,26 @@ p a:hover {
 	background-position: -44px -132px;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 570px)
+ {
     #body #link-pics div{
 		display: block;
 		color: #fff;
 		text-align: left;
-		margin: -240px;
+		padding: 15px;
+		padding-bottom: 25px;
 	}
-	#body ul.gallery li {
-		float: left;
-		margin: 0 0 5% 5%;
-		width: 42%;
+	#body ul li {
+		float: none;
+		display: block;
+		padding: 20px 0 0;
+		text-align: center;
+		width: 30%;	
+	}
+	#header #nav a {
+		
+		display: grid;
+		grid-auto-rows: 1%;
+	
+	}
+}		
