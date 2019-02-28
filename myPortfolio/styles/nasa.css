@@ -9,7 +9,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-image: url(galaxy.jpg);
+    background-image: url(../images/galaxy.jpg);
     background-repeat: no-repeat;
     height: 450px;
     
