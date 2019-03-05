@@ -10,8 +10,9 @@
 </head>
 <body>
     <header class="head"><h1>Welcome to my Portfolio</h1></header>
-    <h3> 
+    <h3 class="nav"> 
         <a href="dashboard.html">dashboard</a>
+        <br>
         <a href="nasa.html">NASA Landing Recreation</a>
     </h3>
     <div class="iframe">
@@ -21,20 +22,21 @@
 <div class="form">
 <form>
         <label for="input">Email: </label>
-        <input type="text" name="email" id="email" required>
+        <input type="text" name="email" id="email" required placeholder="Email Address"> 
         <label for="input">First Name: </label>
-        <input type="text" name="name" id="firstname" required>
+        <input type="text" name="name" id="firstname" required placeholder="First Name">
         <label for="input">Last Name: </label>
-        <input type="text" name="name" id="lastname" required>
+        <input type="text" name="name" id="lastname" required placeholder="Last Name">
         <label for="input">Location: </label>
-        <input type="text" name="location" id="location" required>
-        <input type="text" name="text" id="text-area">
+        <input type="text" name="location" id="location" required placeholder="Where are you form?">
+        <label for="input">Message: </label>
+        <input type="text" name="text" id="text-area" placeholder="Enter a message for me.">
         <label for="date">Date of Birth: </label>
         <input type="date" name="DOB" id="date-of-birth" required>
-        <br>
-        <button type="submit" value="Submit">Submit</button>
-        <br>
         <button type="reset" value="Reset">Reset</button> 
+        <button type="submit" value="Submit">Submit</button>
+       
+        
       </form>
     </div>
 </body>
