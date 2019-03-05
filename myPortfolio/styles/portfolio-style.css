@@ -21,7 +21,7 @@ body {
 .nav {
     display: flex;
     flex-direction: column;
-    
+    flex
 }
 input {
     width: 90%;
@@ -65,7 +65,16 @@ input[type=date] {
   label {
       font-weight: bold;
   }
-
+  @media (min-width: 500px) {
+    .form {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "form input";
+    }
+    .nav a {
+      display: flex;
+      flex-direction: row;
+    }
   @media (min-width: 576px) {
     
     nav > a {
@@ -80,9 +89,7 @@ input[type=date] {
         display: inline;
     
     }
-    button {
-      display: none;
-    }
+    
   }
   }
   /* Medium and up (Tablets) */
@@ -99,10 +106,8 @@ input[type=date] {
       display: inline;
     }
     button {
-      display: inline
+      display: inline;
     }
-    nav {
-      display: inline-block;
-    }
+    
   
   }
