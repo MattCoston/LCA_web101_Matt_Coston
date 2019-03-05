@@ -1,6 +1,43 @@
 * {
     text-decoration: none;
     display: grid;
-    grid-column: 2 2;
-    background-color: aqua
+    grid-column: 1 2;
+    
 }
+body {
+    background-color: rgb(255, 255, 255);
+}
+.head {
+    color: blue;
+    justify-content: center;
+}
+
+.iframe {
+    
+    padding: 15px;
+    justify-content: center;
+    
+}
+
+input {
+    width: 90%;
+}
+
+ form {
+    display: grid;
+    grid-template-areas: "div div"
+    "form form";
+    background-color: lightblue;
+    border: solid black;
+    justify-content: center
+    
+}
+button {
+    width: 100%;
+    color: green;
+    
+}
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+  }
