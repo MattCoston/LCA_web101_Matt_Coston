@@ -24,23 +24,32 @@ body {
     flex
 }
 input {
-    width: 90%;
+    width: 100%;
 }
 a {
     color: rgb(68, 104, 79);
 }
-.form {
+ .form {
     display: grid;
-    grid-auto-flow: inherit;
+    grid-template-columns:  1fr 2fr;
+    grid-template-areas: "form input";
+    padding: 15px;
+    justify-content: center;
+    margin: auto;
+    
+} 
+label {
+  padding: 5px;
 }
- form {
+ .form2 {
     display: grid;
+    grid-template-columns:  1fr 1fr;
     grid-template-areas: "form input";
     background-color: rgb(134, 226, 191);
     border: solid black;
     padding: 15px;
-    width: 20%;
-    margin: auto;
+    width: 100%;
+    
     
 }
 button {
@@ -67,9 +76,26 @@ input[type=date] {
   }
   @media (min-width: 500px) {
     .form {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: 
         "form input";
+        width: 100%;
+        justify-content: center;
+        margin-left: 50%;
+        
+    }
+    
+    .head {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+      width: 70%;
+     margin: auto;
     }
     .nav a {
       display: flex;
@@ -80,34 +106,40 @@ input[type=date] {
     nav > a {
       float:left;
     }
-    form {
-        float: left;
+    .head {
+      display: flex;
+      justify-content: space-between;
     }
+    .form {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+        width: 100%;
+        justify-content: center;
+        margin-left: 50%;
+        
     }
-  @media (max-width: 800px){
-    body {
-        display: inline;
-    
-    }
-    
-  }
-  }
   /* Medium and up (Tablets) */
   @media (min-width: 768px ) {
     body{
       background-color: lightgreen;     
     }
-    nav > a {
+    nav {
       color: white;
       float: left;
       text-align: center;
     }
-    #profile-pic {
-      display: inline;
-    }
     button {
       display: inline;
     }
-    
-  
+    .form2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+      width: 70%;
+     
+  }
+  .iframe {
+    justify-content: center;
   }
