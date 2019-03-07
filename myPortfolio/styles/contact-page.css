@@ -32,3 +32,89 @@ em {
 b {
     display: inline;
 }
+
+.form {
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+    grid-template-areas: "form input";
+    padding: 15px;
+    justify-content: center;
+    margin: auto;
+    
+} 
+label {
+  padding: 5px;
+}
+ .form2 {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-areas: "form input";
+    background-color: rgb(134, 226, 191);
+    border: solid black;
+    padding: 15px;
+    width: 100%;
+    
+    
+}
+button {
+   
+    color: green;
+    display: grid;
+    grid-template-areas: "button button";
+    
+    
+}
+input[type=text] {
+    background-color: rgb(180, 206, 197);
+    color: white;
+    width: 100%;
+    margin-left: -25px;
+  }
+input[type=date] {
+    width: 100%;
+    margin-left: -25px;
+    margin-bottom: 10px;
+}
+  label {
+      font-weight: bold;
+  }
+  @media (min-width: 500px) {
+    .form {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+        width: 100%;
+        justify-content: center;
+        margin-left: 50%;
+        
+    }
+    
+    .head {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+      width: 70%;
+     margin: auto;
+    }
+    
+  @media (min-width: 576px) {
+    
+    .head {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "form input";
+        width: 100%;
+        justify-content: center;
+        margin-left: 50%;
+        
+    }
+ 
