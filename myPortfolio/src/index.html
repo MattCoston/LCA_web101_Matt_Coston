@@ -3,7 +3,7 @@
 <head>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../styles/animate.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,7 +12,7 @@
 <body>
     <header>
             <img src="../images/LCA.png" class="logo" alt="Lubbock coding academy logo">
-            <nav>
+            <nav class="animated pulse">
                 <a class="has-border hover:bg-white" href="resume.html">Resume</a>
                 <a class="has-border hover:bg-white" href="about-page.html">About Me</a>
                 <a class="has-border hover:bg-white" href="blog.html">My Blog</a>
@@ -22,10 +22,12 @@
 
     </header>
     <main>
+            <h2 class="animate">Thanks for stopping by!</h2>
         <img id="profile-pic" src="../images/matt.jpg" alt="Headshot of Me">
-        <h1 class="color-red">Matt Coston</h1>
-        <h2>Student of Web Development</h2>
+        <h1 class="animated fadeInUp">Matt Coston</h1>
+        <h2 class="animated fadeInUp">Student of Web Development</h2>
         <button id="portfolio" onclick="window.location.href = 'portfolio.html';"><a href="portfolio.html">Portfolio</a></button>
+        
     </main>
   <!-- This is a what comment line looks like in HTML -->
   
