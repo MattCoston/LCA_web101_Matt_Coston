@@ -1,0 +1,29 @@
+* {
+    
+}
+
+h1 {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+div {
+    margin-left: 50%;
+    margin-right: 50%;
+    
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: blue;
+    color: aquamarine;
+}
+
+.even:hover {
+    background-color: red;
+}
+.odd:hover {
+    background-color: aqua;
+    transition: ease-in-out 1s;
+}
