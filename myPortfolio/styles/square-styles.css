@@ -1,5 +1,5 @@
 * {
-    
+    background-color: aliceblue;
 }
 
 h1 {
@@ -16,14 +16,51 @@ div {
     width: 50px;
     padding: 5px;
     margin-bottom: 5px;
-    background-color: blue;
     color: aquamarine;
 }
 
 .even:hover {
     background-color: red;
+    transform: scale(1.5);
 }
 .odd:hover {
     background-color: aqua;
-    transition: ease-in-out 1s;
+    transform: scale(0.5);
+}
+#one {
+    background-color: red;
+}
+#two {
+    background-color: green;
+}
+#three {
+    background-color: teal;
+}
+#four {
+    background-color: gray;
+}
+#five {
+    background-color: aquamarine;
+}
+#six {
+    background-color: orange;
+}
+#seven {
+    background-color: orangered;
+}
+#eight {
+    background-color: orchid;
+}
+#nine {
+    background-color: olivedrab;
+}
+#ten {
+    background-color: rosybrown;
+}
+#eleven {
+    background-color: firebrick;
+}
+#twelve {
+    background-color: fuchsia;
+    margin-bottom: 50px;
 }
