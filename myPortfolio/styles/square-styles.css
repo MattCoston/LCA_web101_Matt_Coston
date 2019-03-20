@@ -21,7 +21,8 @@ div {
 
 .even:hover {
     background-color: red;
-    transform: scale(1.5);
+    width: 100px;
+    height: 200px;
 }
 .odd:hover {
     background-color: aqua;
