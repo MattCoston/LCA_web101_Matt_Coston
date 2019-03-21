@@ -8,25 +8,42 @@ h1 {
     justify-content: center;
     padding-bottom: 50px;
 }
-div {
-    margin-left: 50%;
-    margin-right: 50%;
+.square {
     
-    height: 50px;
-    width: 50px;
+    
+    margin: 0 50%;
     padding: 5px;
     margin-bottom: 5px;
-    color: aquamarine;
+    color: black;
+}
+.even {
+    height: 50px;
+    width: 50px;
+    
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+}
+.odd {
+    height: 50px;
+    width: 50px;
+    tr
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
 }
 
-.even:hover {
-    background-color: red;
+#container:hover .even {
+    height: 100px;
     width: 100px;
-    height: 200px;
+    transform: rotate(360deg);
+    margin: 0% 92%;   
 }
-.odd:hover {
-    background-color: aqua;
-    transform: scale(0.5);
+#container:hover .odd {
+    height: 100px;
+    width: 100px;
+    transform: rotate(360deg);
+    margin: 0% -92%;
 }
 #one {
     background-color: red;
