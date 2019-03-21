@@ -20,30 +20,35 @@ h1 {
     height: 50px;
     width: 50px;
     
-    transition-property: all;
+    /* transition-property: all;
     transition-duration: 5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease; */
 }
 .odd {
     height: 50px;
     width: 50px;
-    tr
-    transition-property: all;
-    transition-duration: 5s;
-    transition-timing-function: ease;
+    
+    
 }
 
 #container:hover .even {
     height: 100px;
     width: 100px;
     transform: rotate(360deg);
-    margin: 0% 92%;   
+    margin: 0% 95%;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+       
 }
 #container:hover .odd {
-    height: 100px;
-    width: 100px;
+    height: 25px;
+    width: 25px;
     transform: rotate(360deg);
-    margin: 0% -92%;
+    margin: 0% 0%;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
 }
 #one {
     background-color: red;
