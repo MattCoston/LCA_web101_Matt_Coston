@@ -19,28 +19,24 @@ h1 {
 .even {
     height: 50px;
     width: 50px;
-    
+    transition: all 2s ease;
   
 }
 .odd {
     height: 50px;
     width: 50px;
-    
+    transition: all 2s ease;
     
 }
 #container {
-    transition-property: all;
-    transition-duration: 3s;
-    transition-timing-function: ease-in;
+    
 }
 #container:hover .even {
     height: 25px;
     width: 25px;
     transform: rotate(-360deg);
     margin: 0% 0%;
-    transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
+    
        
 }
 #container:hover .odd {
@@ -48,9 +44,7 @@ h1 {
     width: 100px;
     transform: rotate(360deg);
     margin: 0% 95%;
-    transition-property: all;
-    transition-duration: 4s;
-    transition-timing-function: linear;
+    
     
 }
 #one {
@@ -89,4 +83,13 @@ h1 {
 #twelve {
     background-color: fuchsia;
     margin-bottom: 50px;
+}
+@media(max-width: 360px){
+    #container{
+        max-height: 600px;
+    }
+    div{
+        width: 25px;
+        height: 25px;
+    }
 }
