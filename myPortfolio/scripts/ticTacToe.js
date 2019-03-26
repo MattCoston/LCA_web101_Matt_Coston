@@ -1,11 +1,17 @@
 console.log('hey there');
-alert('hey');
 
-var gameMarker = "x"
+
+var gameMarker = "X";
+var gameMarker = "O";
 
 function changeMarkerToX() {
-    console.log("The x button was clicked!")
+    console.log("The x button was clicked!");
+
 }
 function changeMarkerToO() {
-    console.log("The x button was clicked!")
+    console.log("The O button was clicked!");
+}
+function placeMark(id) {
+    var place = document.getElementById(id);
+    place.innerHTML = gameMarker;
 }
