@@ -1,6 +1,13 @@
+body {
+    background-color: rgb(107, 181, 216);
+}
+h1 {
+    margin-left: 8%;
+}
 .header {
-    color:red;
-    background-color: blue;
+    margin-left: 15%;
+    margin-top: 2%;
+    width: 20%;
 }
 
 .container {
@@ -10,14 +17,17 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: ". . ." ". . ." ". . .";
     height: 200px;
-      width: 200px;
-      margin: 10%;
+    width: 200px;
+    margin-left: 15%;
+    margin-top: 2%;
   }
   .container {
-      
+      background-color: mediumspringgreen;
   }
   .container div {
       border: 2px solid black;
-
+      font-size: 50px;
+      text-align: center;
   }
+
  

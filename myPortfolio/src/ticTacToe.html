@@ -8,20 +8,21 @@
     <title>Tic to the Tac Toe</title>
 </head>
 <body>
+    <h1>Welcome to my Tic Tac Toe Game.</h1>
     <nav class="header">
-        <button class="X" onclick="changeMarkerToX()">Change to X</button>
-        <button class="O" onclick="changeMarkerToO()">Change to O</button>
+        <button onclick="changeMarkerToX()">Change to X</button>
+        <button onclick="changeMarkerToO()">Change to O</button>
     </nav>
     <div class="container">
-        <div id="one" onclick="changeMarkerToX()">1</div>
-        <div id="two">2</div>
-        <div id="three">3</div>
-        <div id="four">4</div>
-        <div id="five">5</div>
-        <div id="six">6</div>
-        <div id="seven">7</div>
-        <div id="eight">8</div>
-        <div id="nine">9</div>
+        <div id="one" onclick="placeMark('one')"></div>
+        <div id="two" onclick="placeMark('two')"></div>
+        <div id="three" onclick="placeMark('three')"></div>
+        <div id="four" onclick="placeMark('four')"></div>
+        <div id="five" onclick="placeMark('five')"></div>
+        <div id="six" onclick="placeMark('six')"></div>
+        <div id="seven" onclick="placeMark('seven')"></div>
+        <div id="eight" onclick="placeMark('eight')"></div>
+        <div id="nine" onclick="placeMark('nine')"></div>
     </div>
 
 
