@@ -19,3 +19,10 @@ function placeMark(id) {
     place.innerHTML = gameMarker;
 }
 
+function clearBoard(id){
+    if (document.getElementById('container') == "X" || document.getElementById('container') == "O"){
+        var clear = document.getElementById(id);
+        clear.innerHTML = " "; 
+        
+    }
+}
