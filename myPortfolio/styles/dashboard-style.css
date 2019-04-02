@@ -147,3 +147,13 @@ header {
   border: solid 2px green;
   text-align: center;
 }
+.geolocation {
+  height: 300px;
+  width: 300px;
+  color: goldenrod;
+  background-color: bisque;
+}
+button {
+  margin-top: 15px;
+  font-size: 22px;
+}

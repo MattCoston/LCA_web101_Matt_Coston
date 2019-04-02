@@ -1,18 +1,38 @@
-let name;
-let text;
+// let name;
+// let text;
 
-function funkyFunc() {
-    name = prompt("Please enter your name: ");
-    if (name == '' || null) {
-        document.getElementById('greeting');
-    }
-    else {
-        text = "Welcome " + name + " to my portfolio!";
-        document.getElementById('greeting').innerHTML = text
-    }
+// function funkyFunc() {
+//     name = prompt("Please enter your name: ");
+//     if (name == '' || null) {
+//         document.getElementById('greeting');
+//     }
+//     else {
+//         text = "Welcome " + name + " to my portfolio!";
+//         document.getElementById('greeting').innerHTML = text
+//     }
 
+// }
+// funkyFunc();
+
+
+
+var myLocation = document.getElementById("geoloc")
+
+function getLocation() {
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(displayPosition)
+  } else {
+   myLocation.innerHTML = "Not available"
+  }
 }
-funkyFunc();
+
+function displayPosition(position) {
+  myLocation.innerHTML = "Longitude: " + position.coords.longitude + " Latitude: " + position.coords.latitude
+}
+
+
+
+
 // color change function for generating three R G B values then changing the background color randomly
 
 function colorChange() {
