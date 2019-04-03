@@ -1,6 +1,13 @@
+body {
+ background-color: rgb(245, 241, 235);}
+
 header {
     background-color: aqua;
     grid-area: header;
+  }
+  h1 {
+    display:grid;
+    justify-content: center;
   }
   main {
     background-color: lightcyan;
@@ -8,11 +15,11 @@ header {
     grid-area: main;
   }
   nav {
-    background-color: maroon;
+    background-color: rgb(233, 223, 223);
     grid-area: nav;
   }
   aside {
-    background-color: aqua;
+    background-color: rgb(95, 202, 202);
     grid-area: aside;
   }
   .banner {
@@ -20,8 +27,8 @@ header {
     grid-area: banner;
   }
   footer {
-    background-color: greenyellow;
     grid-area: footer;
+    margin-left: 50vw;
   }
   
   .container {
@@ -36,7 +43,7 @@ header {
   }
   nav a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   @media (min-width: 500px) {
     .container {
@@ -60,6 +67,7 @@ header {
   
   @media (min-width: 700px) {
     .container {
+      background-color: aqua;
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas: 
         "header header  header"
@@ -151,9 +159,25 @@ header {
   height: 300px;
   width: 300px;
   color: goldenrod;
-  background-color: bisque;
+  background-color: rgb(207, 192, 172);
 }
 button {
   margin-top: 15px;
   font-size: 22px;
+}
+.icecontainer {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px;
+    grid-template-areas: ". ." ". ." ". ." ". .";
+  
+}
+.break {
+  background-color: #52c9f0;
+  height: 50px;
+  width:50px;
+  border: 2px white solid;
+}
+#turn {
+  margin: 2%;
 }

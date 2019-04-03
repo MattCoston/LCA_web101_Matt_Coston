@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <header>header
+        <header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </header>
         <nav>
@@ -24,9 +24,9 @@
             <h1 id="greeting">Welcome to my portfolio!</h1>
           <p>
             <div id="list_section">
-              <h1 id="header">To-do list</h1>
+              <h2 id="header">To-do list</h1>
               <ol>
-                <li class="item">Buy movie tickets</li>
+                <li class="item">Conquer the world!</li>
               </ol>
               <div id="newItemButton"><button href="#">new item</button></div>
               <form id="newItemForm">
@@ -126,18 +126,38 @@
       <div class="geolocation">
         <button id="geoloc" onclick="getLocation()">Click for GeoLocation!</button>
       </div>
+      
+
     </aside>
+    <div class="clicker">
+      <h1>
+        Click the ice to break it!
+      </h1>
+        <div class="icecontainer">
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+          <div class="break"></div>
+        </div>
+      <button id="turn" onclick="iceBreak()">Start</button>
+    </div>
         <div class="banner">
           <img src="../images/Bruce_Banner.jpg" alt="Bruce Banner before he hulks out">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         <footer>
-          Footer  Follow me on Social Media <a href="https://twitter.com/faust299">@Faust299</a></footer>
-      </div>
+            Follow me on Social Media <a href="https://twitter.com/faust299">@Faust299</a>
+          </footer>
+      
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCbKJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="../scripts/jquery.js"></script>
       <script src="../scripts/todo.js"></script>
       <script src="../scripts/dashboard.js"></script>
+      <script src="../scripts/icebreak.js"></script>
       
 </body>
 </html> 
