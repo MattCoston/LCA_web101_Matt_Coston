@@ -162,14 +162,16 @@ header {
   background-color: rgb(207, 192, 172);
 }
 button {
-  margin-top: 15px;
+  margin-top: 25px;
   font-size: 22px;
+  
 }
 .icecontainer {
     display: grid;
-    grid-template-columns: 70px 70px;
-    grid-template-rows: 70px 70px 70px 70px;
-    grid-template-areas: ". ." ". ." ". ." ". .";
+    justify-content: center;
+    grid-template-columns: 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-areas: ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . .";
   
 }
 .break {
@@ -179,5 +181,7 @@ button {
   border: 2px white solid;
 }
 #turn {
-  margin: 2%;
+  margin-left: 50%;
+  margin-bottom: 25px;
+  
 }
