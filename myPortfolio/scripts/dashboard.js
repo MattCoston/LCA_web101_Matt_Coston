@@ -1,20 +1,35 @@
-// let name;
-// let text;
+function addNumber(num) {
+  document.querySelector("#results").value += num;
+}
 
-// function funkyFunc() {
-//     name = prompt("Please enter your name: ");
-//     if (name == '' || null) {
-//         document.getElementById('greeting');
-//     }
-//     else {
-//         text = "Welcome " + name + " to my portfolio!";
-//         document.getElementById('greeting').innerHTML = text
-//     }
+function clearResults() {
+  document.querySelector("#results").value = "";
+}
 
-// }
-// funkyFunc();
+function addition() {
+  document.querySelector("#results").value += "+";
+}
 
+function equals() {
+  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+}
 
+function deleteLast() {
+  let current = document.querySelector("#results").value;
+  document.querySelector("#results").value = current.slice(0, -1);
+}
+function subtractNumber() {
+  document.querySelector("#results").value += "-";
+}
+function multiplyNumber() {
+  document.querySelector("#results").value += "*";
+}
+function divideNumber() {
+  document.querySelector("#results").value += "/";
+}
+function plusMinus() {
+  document.querySelector("#results").value = document.querySelector("#results").value * -1;
+}
 
 var myLocation = document.getElementById("geoloc")
 
